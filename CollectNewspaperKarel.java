@@ -33,15 +33,10 @@ public class CollectNewspaperKarel extends SuperKarel {
 	}
 
 	private void checkForPath() {
-		while (leftIsBlocked()) {
-			if (frontIsClear()) {
+		while (frontIsClear()) {
 				move();
-
-			} else {
-				turnRight();
 			}
-		}
-		move();
+		turnRight();
 	}
 	private void twist(){
 		turnLeft();
