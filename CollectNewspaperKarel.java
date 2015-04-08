@@ -36,7 +36,7 @@ public class CollectNewspaperKarel extends SuperKarel {
 	}
 
 	private void goToCorner() {
-		while (frontIsClear()) {
+		while (rightIsClear()) {
 				move();
 			}
 		turnRight();
