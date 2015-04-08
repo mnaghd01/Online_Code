@@ -34,7 +34,6 @@ public class CollectNewspaperKarel extends SuperKarel {
 		while (frontIsClear()) {
 			move();
 		}
-		turnRight();
 	}
 
 	private void goToBeeper() {
