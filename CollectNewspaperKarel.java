@@ -29,29 +29,30 @@ public class CollectNewspaperKarel extends SuperKarel {
 
 	}
 
-	public void Beeper() {
+	private void Beeper() {
 		if (beepersPresent()) {
 			pickBeeper();
 		}
 	}
 
-	public void goToCorner() {
+	private void goToCorner() {
 		while (frontIsClear()) {
 				move();
 			}
 		turnRight();
 	}
-	public void goToBeeper(){
+	private void goToBeeper(){
 		turnRight();
 		move();
 		turnLeft();
+		
 	}
-	public void twist(){
+	private void twist(){
 		turnLeft();
 		turnLeft();
 	}
 
-	public void comeBack() {
+	private void comeBack() {
 		while (frontIsClear()) {
 		move();	
 				}
