@@ -16,13 +16,11 @@ public class CollectNewspaperKarel extends SuperKarel {
 		/*
 		 * knowing the world
 		 */
-			goToCorner();
-			goToBeeper();
-			Beeper();
-			twist();
-			comeBack();
-
-		}
+		goToCorner();
+		goToBeeper();
+		Beeper();
+		twist();
+		comeBack();
 
 	}
 
@@ -34,25 +32,27 @@ public class CollectNewspaperKarel extends SuperKarel {
 
 	private void goToCorner() {
 		while (frontIsClear()) {
-				move();
-			}
+			move();
+		}
 		turnRight();
 	}
-	private void goToBeeper(){
+
+	private void goToBeeper() {
 		turnRight();
 		move();
 		turnLeft();
-		
+
 	}
-	private void twist(){
+
+	private void twist() {
 		turnLeft();
 		turnLeft();
 	}
 
 	private void comeBack() {
 		while (frontIsClear()) {
-		move();	
-				}
+			move();
+		}
 		turnRight();
 
 	}
