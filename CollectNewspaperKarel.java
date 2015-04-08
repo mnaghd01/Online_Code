@@ -33,7 +33,6 @@ public class CollectNewspaperKarel extends SuperKarel {
 	}
 
 	private void checkForPath() {
-		move();
 		while (leftIsBlocked()) {
 			if (frontIsClear()) {
 				move();
