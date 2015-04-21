@@ -30,8 +30,8 @@ private void CheckForTile() {
 			}
 	}
 private void MoveToNextPlace() {
-	int i=0;
-	while (i%4!=0){
+	int i=1;
+	while (i%5!=0){
 		move();
 		i++;
 	}
