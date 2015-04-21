@@ -18,6 +18,7 @@ public class StoneMasonKarel extends SuperKarel {
 			j++;
 			CheckForTile();
 			MoveToNextPlace();
+		} else {
 			ComeBack();
 			GoToNextRow();
 		}
@@ -30,10 +31,11 @@ private void CheckForTile() {
 	}
 private void MoveToNextPlace() {
 	int i=1;
-	if (i%4!=0){
+	while (i%4!=0){
 		move();
 		i++;
 	}
+	
 	}
 private void GoToNextRow() {
 	if (frontIsClear()) {
