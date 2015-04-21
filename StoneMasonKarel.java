@@ -38,9 +38,11 @@ private void MoveToNextPlace() {
 	
 	}
 private void GoToNextRow() {
+	turnLeft();
 	if (frontIsClear()) {
 		move();
 }
+	turnRight();
 }
 private void ComeBack() {
 	turnLeft();
