@@ -32,8 +32,11 @@ public class CheckerboardKarel extends SuperKarel {
 	}
 
 	private void goUp() {
-		turnLeft();
-		move();
-		turnLeft();
+		if (faceEast()) {
+			
+			turnLeft();
+			move();
+			turnLeft();
+		}
 	}
 }
