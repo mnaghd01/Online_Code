@@ -30,23 +30,21 @@ public class MidpointFindingKarel extends SuperKarel {
 		}
 		TurnBack();
 		if (i % 2 == 0) {
-
 			int j = 0;
-			int k = 0;
+			int k = 1;
 			j = i;
-
 			while (k != j / 2) {
 
 				move();
-				k--;
+				k++;
 			}
 		} else {
 			int j = 0;
-			int k = 0;
+			int k = 1;
 			j = i;
 			while (k != j / 2 + 1) {
 				move();
-				k--;
+				k++;
 			}
 		}
 	}
