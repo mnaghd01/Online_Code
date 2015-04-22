@@ -25,6 +25,9 @@ public class CheckerboardKarel extends SuperKarel {
 				i--;
 				move();
 			}
+			if (frontIsClear()){
+				move();
+			}
 		}
 	}
 
