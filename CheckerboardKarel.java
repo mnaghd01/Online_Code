@@ -11,13 +11,11 @@ import stanford.karel.*;
 
 public class CheckerboardKarel extends SuperKarel {
 	public void run() {
-		while (frontIsClear()) {
+		while (leftIsClear()) {
 			PutaRow();
-		}
-		if (frontIsClear()) {
 			goUp();
 		}
-	}
+		}
 
 	private void PutaRow() {
 		while (frontIsClear()) {
