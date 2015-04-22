@@ -14,23 +14,25 @@ public class CheckerboardKarel extends SuperKarel {
 		while (frontIsClear()) {
 			PutaRow();
 		}
-		if (frontIsClear()){
+		if (frontIsClear()) {
 			goUp();
- }
-}
-
-private void PutaRow(){
-	int i=1;
-	int j=1;
-	while (i!=0) {
-		putBeeper();
-		i--;
+		}
 	}
-	move();
-}
-private void goUp(){
-	turnLeft();
-	move();
-	turnLeft();
-}
+
+	private void PutaRow() {
+		while (frontIsClear()) {
+			int i = 1;
+			while (i != 0) {
+				putBeeper();
+				i--;
+				move();
+			}
+		}
+	}
+
+	private void goUp() {
+		turnLeft();
+		move();
+		turnLeft();
+	}
 }
