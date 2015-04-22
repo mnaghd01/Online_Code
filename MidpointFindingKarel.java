@@ -19,7 +19,7 @@ public class MidpointFindingKarel extends SuperKarel {
 		while (noBeepersPresent()) {
 			PaceTheWay();
 			ComeBack();
-			PutTheBeeper();
+			TheBper();
 		}
 	}
 
@@ -57,7 +57,7 @@ public class MidpointFindingKarel extends SuperKarel {
 		turnLeft();
 	}
 
-	private PutTheBeeper() {
+	private TheBper() {
 
 		putBeeper();
 	}
