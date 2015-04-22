@@ -11,7 +11,7 @@ import stanford.karel.*;
 
 public class CheckerboardKarel extends SuperKarel {
 	public void run() {
-		while (leftIsClear()) {
+		while (leftIsClear()) { /*Checks to see if it has reached the top*/
 			PutaRow();
 			goUp();
 		}
