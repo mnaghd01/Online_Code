@@ -19,10 +19,10 @@ public class MidpointFindingKarel extends SuperKarel {
 		while (noBeepersPresent()) {
 			PaceTheWay();
 			ComeBack();
-			TheBper();
+			TeBper();
 		}
 	}
-
+	
 	private void PaceTheWay() {
 		int i = 1;
 		while (frontIsClear()) {
@@ -57,8 +57,7 @@ public class MidpointFindingKarel extends SuperKarel {
 		turnLeft();
 	}
 
-	private TheBper() {
-
+	private TeBper() {
 		putBeeper();
 	}
 
