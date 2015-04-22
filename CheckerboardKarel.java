@@ -15,7 +15,7 @@ public class CheckerboardKarel extends SuperKarel {
 			PutaRow();
 			goUp();
 		}
-		}
+	}
 
 	private void PutaRow() {
 		while (frontIsClear()) {
@@ -36,6 +36,7 @@ public class CheckerboardKarel extends SuperKarel {
 			turnLeft();
 		} else {
 			turnRight();
+			move();
 			turnRight();
 		}
 	}
