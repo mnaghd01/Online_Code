@@ -12,15 +12,16 @@ import stanford.karel.*;
 
 public class StoneMasonKarel extends SuperKarel {
 	public void run() {
-		int j=0;
+		int j=1;
 		while (j!=5) {			
 		if (frontIsClear()) {
-			j++;
 			CheckForTile();
 			MoveToNextPlace();
 		} else {
+			CheckForTile();
 			ComeBack();
 			GoToNextRow();
+			j++;
 		}
 	}
 	}
