@@ -57,7 +57,7 @@ public class MidpointFindingKarel extends SuperKarel {
 		turnLeft();
 	}
 
-	private TeBper() {
+	private void TeBper() {
 		putBeeper();
 	}
 
