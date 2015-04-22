@@ -20,7 +20,13 @@ public class CheckerboardKarel extends SuperKarel {
 }
 
 private void PutaRow(){
-	
+	int i=1;
+	int j=1;
+	while (i!=0) {
+		putBeeper();
+		i--;
+	}
+	move();
 }
 private void goUp(){
 	turnLeft();
