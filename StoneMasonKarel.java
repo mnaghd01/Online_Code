@@ -18,7 +18,6 @@ public class StoneMasonKarel extends SuperKarel {
 		MoveUp();   		  		/*Karel checks if there is a tile in place then moves on, if not puts one */
 		MoveDown();     			 /* Makes Karel to come back to first avenue*/
 		MoveToNextPlace(); 			/* This method moves Karel to avenues 4 blocks apart*/
-		GoToNextColumn();   		/* Makes Karel to go up one street*/
 	}
 	private void MoveUp() {
 		turnLeft();
@@ -51,13 +50,4 @@ public class StoneMasonKarel extends SuperKarel {
 		}
 
 	}
-
-	private void GoToNextColumn() {
-		turnLeft();
-		if (frontIsClear()) {
-			move();
-		}
-		turnRight();
-	}
-
 }
