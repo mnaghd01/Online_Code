@@ -69,7 +69,7 @@ public class StoneMasonKarel extends SuperKarel {
 		}
 	}
 
-	private void ErSafe() {
+	private void ErSafe() {        /* This is to elliminate the effect of the OBO error, so does the moveup and down one more out of the loop*/
 		MoveUp();
 		MoveDown();
 	}
