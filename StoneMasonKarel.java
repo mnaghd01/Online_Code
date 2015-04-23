@@ -12,7 +12,7 @@ import stanford.karel.*;
 public class StoneMasonKarel extends SuperKarel {
 	public void run() {
 		if (frontIsClear()) {   /* This condition makes sure Karel is not at the end of the street*/
-			CheckForTile()
+			CheckForTile();
 			MoveUp();     /*Karel checks if there is a tile in place then moves on, if not puts one */
 			MoveToNextPlace(); 	/* This method moves Karel to avenues 4 blocks apart*/
 		} else {
