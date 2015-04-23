@@ -33,10 +33,10 @@ public class StoneMasonKarel extends SuperKarel {
 			move();
 		}
 		CheckForTile();
+		turnRight();
 	}
 
 	private void MoveDown() {
-		turnRight();
 		turnRight();
 		while (frontIsClear()) {
 			move();
