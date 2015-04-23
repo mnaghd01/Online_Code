@@ -50,7 +50,7 @@ public class StoneMasonKarel extends SuperKarel {
 		}
 	}
 
-	private void CheckIfEnd() {
+	private void CheckIfEnd() { /* Checks if Karel has reached the end of the street, if so turns right so that the while loop in the RepairTheTiles() method would be broken*/
 		if (frontIsClear()) {
 			MoveToNextPlace();
 		} else {
