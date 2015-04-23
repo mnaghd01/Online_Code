@@ -23,8 +23,8 @@ public class StoneMasonKarel extends SuperKarel {
 				MoveUp();   		  		/*Karel checks if there is a tile in place then moves on, if not puts one */
 				MoveDown();/* Makes Karel to come back to first avenue*/
 				CheckIfEnd();
-		ErSafe();
 	}
+		ErSafe();
 	}
 	private void MoveUp() {
 		turnLeft();
