@@ -23,17 +23,17 @@ public class StoneMasonKarel extends SuperKarel {
 		ErSafe();					/*This is to vouch for the OFF_BY_One error.*/
 	}
 
-	private void MoveUp() {
+	private void MoveUp() {  /*turns Karel to the left, moves it up till it reaches the top*/
 		turnLeft();
 		while (frontIsClear()) {
 			CheckForTile();
 			move();
 		}
-		CheckForTile();
+		CheckForTile();      /* This is in case top was blocked*/
 		turnRight();
 	}
 
-	private void MoveDown() {
+	private void MoveDown() { /* Makes Karel to come back.*/
 		turnRight();
 		while (frontIsClear()) {
 			move();
