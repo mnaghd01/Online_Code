@@ -38,7 +38,7 @@ public class StoneMasonKarel extends SuperKarel {
 		while (frontIsClear()) {
 			move();
 		}
-		turnLeft();
+		turnLeft();            /*puts it in the position for next pillars*/
 	}
 
 	private void CheckForTile() { /*
