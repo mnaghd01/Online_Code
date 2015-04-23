@@ -22,7 +22,10 @@ public class StoneMasonKarel extends SuperKarel {
 	}
 	private void MoveDown(){
 		turnRight();
-		while frontIsClear();
+		while (frontIsClear()){
+			move();
+		}
+		turnLeft();
 		
 	}
 	private void CheckForTile() {
