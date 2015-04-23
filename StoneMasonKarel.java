@@ -17,10 +17,10 @@ public class StoneMasonKarel extends SuperKarel {
 	private void RepairTheTiles() {	/*Initial process to do the repair job,*/
 		while (frontIsClear()) {
 			MoveUp();				/*moves Karel up the avenues of the map and meanwhile checks for the missing tiles.*/
-			MoveDown();
-			CheckIfEnd();
+			MoveDown();				/*moves Karel down the avenue to the first street*/
+			CheckIfEnd();			/*Checks if Karel has reached to the block */
 		}
-		ErSafe();
+		ErSafe();					/*This is to vouch for the OFF_BY_One error.*/
 	}
 
 	private void MoveUp() {
