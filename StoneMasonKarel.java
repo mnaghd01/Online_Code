@@ -11,21 +11,18 @@ import stanford.karel.*;
  */
 public class StoneMasonKarel extends SuperKarel {
 	public void run() {
-		RepairTheTiles();/*
-						 * This condition makes sure Karel is not at the end of
-						 * the street
-						 */
-
+		RepairTheTiles();/*						 */
 	}
 
-	private void RepairTheTiles(){
-		while (frontIsClear()){
-				MoveUp();   		  		/*Karel checks if there is a tile in place then moves on, if not puts one */
-				MoveDown();/* Makes Karel to come back to first avenue*/
-				CheckIfEnd();
-	}
+	private void RepairTheTiles() {	/*Initial process to do the repair job,*/
+		while (frontIsClear()) {
+			MoveUp();				/*moves Karel up the avenues of the map and meanwhile checks for the missing tiles.*/
+			MoveDown();
+			CheckIfEnd();
+		}
 		ErSafe();
 	}
+
 	private void MoveUp() {
 		turnLeft();
 		while (frontIsClear()) {
@@ -42,32 +39,36 @@ public class StoneMasonKarel extends SuperKarel {
 			move();
 		}
 		turnLeft();
-
 	}
 
-	private void CheckForTile() {
+	private void CheckForTile() { /*
+								 * Karel checks if there is a tile in place then
+								 * moves on, if not puts one
+								 */
 		if (noBeepersPresent()) {
 			putBeeper();
 		}
 	}
-	private void CheckIfEnd(){
-		if (frontIsClear()){
+
+	private void CheckIfEnd() {
+		if (frontIsClear()) {
 			MoveToNextPlace();
+		} else {
+			turnRight();
 		}
-			else {
-				turnRight();
-			}
 	}
 
-	private void MoveToNextPlace() {	/* This method moves Karel to avenues 4 blocks apart*/
-
+	private void MoveToNextPlace() { /*
+									 * This method moves Karel to avenues 4
+									 * blocks apart
+									 */
 		int i = 1;
 		while (i % 5 != 0) {
 			move();
 			i++;
 		}
-
 	}
+
 	private void ErSafe() {
 		MoveUp();
 		MoveDown();
