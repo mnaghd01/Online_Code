@@ -21,9 +21,8 @@ public class StoneMasonKarel extends SuperKarel {
 	private void RepairTheTiles(){
 		while (leftIsClear()){
 				MoveUp();   		  		/*Karel checks if there is a tile in place then moves on, if not puts one */
-				MoveDown();     			 /* Makes Karel to come back to first avenue*/
-				if (frontIsClear()){
-					MoveToNextPlace(); 			/* This method moves Karel to avenues 4 blocks apart*/
+				MoveDown();/* Makes Karel to come back to first avenue*/
+				CheckIfEnd();
 	}
 	}
 	}
@@ -51,8 +50,17 @@ public class StoneMasonKarel extends SuperKarel {
 			putBeeper();
 		}
 	}
+	private void CheckIfEnd(){
+		if (frontIsClear()){
+			MoveToNextPlace();
+		}
+			else {
+				turnRight();
+			}
+	}
 
-	private void MoveToNextPlace() {
+	private void MoveToNextPlace() {	/* This method moves Karel to avenues 4 blocks apart*/
+
 		int i = 1;
 		while (i % 5 != 0) {
 			move();
