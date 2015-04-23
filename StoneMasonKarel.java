@@ -10,13 +10,9 @@ import stanford.karel.*;
  * then at the end of the street comes back and moves one street up, then does the same thing. 
  */
 public class StoneMasonKarel extends SuperKarel {
-	public void run() {
-		if (frontIsClear()) {   /* This condition makes sure Karel is not at the end of the street*/
-			CheckForTile();
+	public void run() {   /* This condition makes sure Karel is not at the end of the street*/
 			MoveUp();     /*Karel checks if there is a tile in place then moves on, if not puts one */
 			MoveToNextPlace(); 	/* This method moves Karel to avenues 4 blocks apart*/
-		} else {
-			CheckForTile();   /*This was put into place for the Off_By_One error*/
 			ComeBack();      /* Makes Karel to come back to first avenue*/
 			GoToNextColumn();   /* Makes Karel to go up one street*/
 		}
@@ -37,7 +33,7 @@ public class StoneMasonKarel extends SuperKarel {
 
 	}
 	private void MoveUp() {
-		while (leftIsCLear()) {			/*This counter makes sure Karel would not go to higher streets than intended */
+		while (leftIsCLear()) {	
 			CheckForTile();
 			turnLeft();
 			move();
