@@ -20,7 +20,16 @@ public class StoneMasonKarel extends SuperKarel {
 		MoveToNextPlace(); 			/* This method moves Karel to avenues 4 blocks apart*/
 		GoToNextColumn();   		/* Makes Karel to go up one street*/
 	}
+	private void MoveUp() {
+		turnLeft();
+		while (frontIsClear()) {	
+			CheckForTile();
+			move();
+			
+		}
+	}
 	private void MoveDown(){
+		turnRight();
 		turnRight();
 		while (frontIsClear()){
 			move();
@@ -41,14 +50,6 @@ public class StoneMasonKarel extends SuperKarel {
 			i++;
 		}
 
-	}
-	private void MoveUp() {
-		turnLeft();
-		while (frontIsClear()) {	
-			CheckForTile();
-			move();
-			
-		}
 	}
 
 	private void GoToNextColumn() {
