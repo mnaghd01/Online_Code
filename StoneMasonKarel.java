@@ -11,31 +11,39 @@ import stanford.karel.*;
  */
 public class StoneMasonKarel extends SuperKarel {
 	public void run() {
-			RepairTheTiles();/* This condition makes sure Karel is not at the end of the street*/
-			
+		RepairTheTiles();/*
+						 * This condition makes sure Karel is not at the end of
+						 * the street
+						 */
+
 	}
+
 	private void RepairTheTiles(){
+		while (frontIsClear()){
 		MoveUp();   		  		/*Karel checks if there is a tile in place then moves on, if not puts one */
 		MoveDown();     			 /* Makes Karel to come back to first avenue*/
 		MoveToNextPlace(); 			/* This method moves Karel to avenues 4 blocks apart*/
 	}
+	}
+
 	private void MoveUp() {
 		turnLeft();
-		while (frontIsClear()) {	
+		while (frontIsClear()) {
 			CheckForTile();
 			move();
-			
 		}
 	}
-	private void MoveDown(){
+
+	private void MoveDown() {
 		turnRight();
 		turnRight();
-		while (frontIsClear()){
+		while (frontIsClear()) {
 			move();
 		}
 		turnLeft();
-		
+
 	}
+
 	private void CheckForTile() {
 		if (noBeepersPresent()) {
 			putBeeper();
