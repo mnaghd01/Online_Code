@@ -10,14 +10,19 @@ import stanford.karel.*;
  * then at the end of the street comes back and moves one street up, then does the same thing. 
  */
 public class StoneMasonKarel extends SuperKarel {
-	public void run() {   /* This condition makes sure Karel is not at the end of the street*/
-			MoveUp();     /*Karel checks if there is a tile in place then moves on, if not puts one */
-			MoveToNextPlace(); 	/* This method moves Karel to avenues 4 blocks apart*/
-			ComeBack();      /* Makes Karel to come back to first avenue*/
-			GoToNextColumn();   /* Makes Karel to go up one street*/
-		}
+	public void run() {
+			RepairTheTiles();/* This condition makes sure Karel is not at the end of the street*/
+			
 	}
-
+	private void RepairTheTiles(){
+		MoveUp();   		  		/*Karel checks if there is a tile in place then moves on, if not puts one */
+		MoveDown();     			 /* Makes Karel to come back to first avenue*/
+		MoveToNextPlace(); 			/* This method moves Karel to avenues 4 blocks apart*/
+		GoToNextColumn();   		/* Makes Karel to go up one street*/
+	}
+	private void MoveDown(){
+		
+	}
 	private void CheckForTile() {
 		if (noBeepersPresent()) {
 			putBeeper();
