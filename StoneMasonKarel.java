@@ -25,7 +25,6 @@ public class StoneMasonKarel extends SuperKarel {
 				CheckIfEnd();
 	}
 	}
-	}
 	private void MoveUp() {
 		turnLeft();
 		while (frontIsClear()) {
