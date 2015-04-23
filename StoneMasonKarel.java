@@ -20,12 +20,13 @@ public class StoneMasonKarel extends SuperKarel {
 
 	private void RepairTheTiles(){
 		while (leftIsClear()){
-		MoveUp();   		  		/*Karel checks if there is a tile in place then moves on, if not puts one */
-		MoveDown();     			 /* Makes Karel to come back to first avenue*/
-		MoveToNextPlace(); 			/* This method moves Karel to avenues 4 blocks apart*/
+			if (frontIsCLear()){
+				MoveUp();   		  		/*Karel checks if there is a tile in place then moves on, if not puts one */
+				MoveDown();     			 /* Makes Karel to come back to first avenue*/
+				MoveToNextPlace(); 			/* This method moves Karel to avenues 4 blocks apart*/
 	}
 	}
-
+	}
 	private void MoveUp() {
 		turnLeft();
 		while (frontIsClear()) {
