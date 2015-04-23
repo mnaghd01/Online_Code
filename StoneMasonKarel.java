@@ -43,7 +43,7 @@ public class StoneMasonKarel extends SuperKarel {
 
 	private void CheckForTile() { /*
 								 * Karel checks if there is a tile in place then
-								 * moves on, if not puts one
+								 * moves on, if not puts one in the place
 								 */
 		if (noBeepersPresent()) {
 			putBeeper();
