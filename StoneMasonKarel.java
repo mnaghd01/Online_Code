@@ -32,6 +32,7 @@ public class StoneMasonKarel extends SuperKarel {
 			CheckForTile();
 			move();
 		}
+		CheckForTile();
 	}
 
 	private void MoveDown() {
