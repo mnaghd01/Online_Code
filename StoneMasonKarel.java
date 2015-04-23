@@ -59,13 +59,4 @@ public class StoneMasonKarel extends SuperKarel {
 		turnRight();
 	}
 
-	private void ComeBack() {
-		turnLeft();
-		turnLeft();
-		while (frontIsClear()) {
-			move();
-		}
-		turnLeft();
-		turnLeft();
-	}
 }
