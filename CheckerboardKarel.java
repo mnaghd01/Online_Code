@@ -36,6 +36,14 @@ public class CheckerboardKarel extends SuperKarel {
 				i++;
 			}
 		}
+		while(leftIsClear()){
+			turnLeft();
+			if (leftIsClear()){
+			if (noBeepersPresent()){
+				putBeeper();
+			}
+			}
+		}
 	}
 
 	private void goUp() { /*Checks which avenue Karel is, then decides how it should go up*/
