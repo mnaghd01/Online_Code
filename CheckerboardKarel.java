@@ -35,6 +35,13 @@ public class CheckerboardKarel extends SuperKarel {
 				move();
 				i++;
 			}
+		while (leftIsClear()){
+			while (i % 2 !=0) {
+				putBeeper();
+				i++;
+				move();
+			}
+			}
 		}
 	}
 
