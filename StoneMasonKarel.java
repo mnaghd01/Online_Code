@@ -6,8 +6,9 @@
 
 import stanford.karel.*;
 
-/* In the following code. Karel moves to the end of each street, and in the process stops at the avenues that need tile repair;
- * then at the end of the street comes back and moves one street up, then does the same thing. 
+/* In the following code. Karel moves to the end of each avenue, and in the process stops at the places that need tile repair;
+ * then at the end of the pillar (avenue) comes down and moves one block forward, then does the same thing.
+ * In the end to by pass the effect of OBOB, does the up and down move one more time.
  */
 public class StoneMasonKarel extends SuperKarel {
 	public void run() {
