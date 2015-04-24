@@ -16,7 +16,7 @@ public class CheckerboardKarel extends SuperKarel {
 			PutaRow();          /* Puts a beeper in a row back and forth*/
 			goUp();         /*If reached at the end of a street, goes up one avenue*/
 		} else{
-			if frontIsClear() {
+			if (frontIsClear()) {
 				PutaRow();
 			}
 		}
