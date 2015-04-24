@@ -11,7 +11,7 @@ import stanford.karel.*;
 
 public class CheckerboardKarel extends SuperKarel {
 	public void run() {
-		while (true) { /*Checks to see if it has reached the top*/
+		while (frontIsClear()) { /*Checks to see if it has reached the top*/
 			if (leftIsClear()){
 			PutaRow();          /* Puts a beeper in a row back and forth*/
 			goUp();         /*If reached at the end of a street, goes up one avenue*/
