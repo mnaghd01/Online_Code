@@ -24,8 +24,7 @@ public class CheckerboardKarel extends SuperKarel {
 	}
 
 	private void PutaRow() {
-		while (frontIsClear()) {
-			int i = 1;
+			int i = 0;
 			while (i != 0) {
 				putBeeper();
 				i--;
@@ -34,7 +33,7 @@ public class CheckerboardKarel extends SuperKarel {
 			if (frontIsClear()){
 				move();
 			}
-		}
+		
 	}
 
 	private void goUp() { /*Checks which avenue Karel is, then decides how it should go up*/
