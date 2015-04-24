@@ -24,11 +24,11 @@ public class CheckerboardKarel extends SuperKarel {
 	}
 
 	private void PutaRow() {
+		int i = 0;
 		while(frontIsClear()){
-			int i = 1;
-			while (i != 0) {
+			while (i % 2 !=0) {
 				putBeeper();
-				i--;
+				i++;
 				move();
 			}
 			if (frontIsClear()){
