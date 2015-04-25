@@ -30,9 +30,11 @@ public class CheckerboardKarel extends SuperKarel {
 		j++;
 		turnRight();
 		}
-		int k=i;
+		k=i;
+		turnLeft();
+		turnLeft();
 		while (j!=0){
-			
+			i=k;
 			while (i!=0){
 				if (i%2!=0){
 					putBeeper();
@@ -42,7 +44,10 @@ public class CheckerboardKarel extends SuperKarel {
 					move();
 					i--;
 				}
-			}	
+			}
+			j--;
+			GoDown();
+			
 			}
 	}
 
@@ -77,8 +82,8 @@ public class CheckerboardKarel extends SuperKarel {
 		turnRight();
 	}
 
-	private void goUp() { /*Checks which avenue Karel is, then decides how it should go up*/
-		if (facingEast()) {
+	private void GoDown() { /*Checks which avenue Karel is, then decides how it should go up*/
+		if (facingWest()) {
 			turnLeft();
 			move();
 			turnLeft();
