@@ -33,7 +33,6 @@ public class CheckerboardKarel extends SuperKarel {
 				i++;
 			}
 		}
-	}
 	private void ComeBack(){
 		turnLeft();
 		turnLeft();
