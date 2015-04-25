@@ -24,7 +24,8 @@ public class CheckerboardKarel extends SuperKarel {
 	}
 	private void Put() {
 		int i = 1;
-		if (i % 2 !=0) {
+		while(frontIsClear()){
+			if (i % 2 !=0) {
 				putBeeper();
 				i++;
 				move();
@@ -33,6 +34,7 @@ public class CheckerboardKarel extends SuperKarel {
 				i++;
 			}
 		}
+	}
 	private void ComeBack(){
 		turnLeft();
 		turnLeft();
