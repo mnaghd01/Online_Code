@@ -33,7 +33,7 @@ public class CheckerboardKarel extends SuperKarel {
 		k=i;
 		turnLeft();
 		turnLeft();
-		while (j!=0){
+		while (j!=-1){
 			i=k;
 			for (int l=i;l>=1;l--){
 				if (l%2!=0){
