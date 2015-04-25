@@ -27,8 +27,11 @@ public class CheckerboardKarel extends SuperKarel {
 		turnLeft();
 		move();
 		j++;
+		turnRight();
 		}
-		
+		while (i!=0){
+			
+		}
 	}
 
 	private void Put() {
