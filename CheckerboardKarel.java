@@ -37,19 +37,13 @@ public class CheckerboardKarel extends SuperKarel {
 			}
 			
 		}
-		if (i!=1){
-		turnLeft();
-		while(frontIsClear()){
-			PutaRow();
-		}
-		}
 	}
 	private void ComeBack(){
 		turnLeft();
 		turnLeft();
 		while (frontIsClear()){
 			move();
-		}
+		}if (rightIsClear());
 		turnRight();
 		turnRight();
 	}
