@@ -20,7 +20,7 @@ public class CheckerboardKarel extends SuperKarel {
 		int i = 1;
 		while (frontIsClear()) { 
 			while (leftIsClear()){
-
+			if (frontIsClear()){
 			if (i % 2 !=0) {
 				putBeeper();
 				i++;
@@ -32,6 +32,7 @@ public class CheckerboardKarel extends SuperKarel {
 		}
 		}
 		goUp();
+	}
 	}
 	
 	private void ComeBack(){
