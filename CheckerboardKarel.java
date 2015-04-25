@@ -13,7 +13,8 @@ public class CheckerboardKarel extends SuperKarel {
 	public void run() {
 		while (frontIsClear()) { /*Checks to see if it has reached the top*/
 			if (leftIsClear()){
-			PutaRow();          /* Puts a beeper in a row back and forth*/
+			PutaRow();
+			ComeBack();/* Puts a beeper in a row back and forth*/
 			goUp();         /*If reached at the end of a street, goes up one avenue*/
 		} else{
 			if (frontIsClear()) {
@@ -51,7 +52,7 @@ public class CheckerboardKarel extends SuperKarel {
 		if (facingEast()) {
 			turnLeft();
 			move();
-			turnLeft();
+			turnRight();
 		} else {
 			turnRight();
 			if (frontIsClear()){
