@@ -11,7 +11,7 @@ import stanford.karel.*;
 
 public class CheckerboardKarel extends SuperKarel {
 	public void run() {
-		while (frontIsClear()) { /*Checks to see if it has reached the top*/
+		while (true) { /*Checks to see if it has reached the top*/
 			if (leftIsClear()){
 			PutaRow();
 			ComeBack();/* Puts a beeper in a row back and forth*/
@@ -32,10 +32,10 @@ public class CheckerboardKarel extends SuperKarel {
 				i++;
 				move();
 			}
-		if (frontIsBlocked()){
-				ComeBack();
-				i++;
-			}
+		}
+		turnLeft();
+		while(frontIsClear()){
+			PutaRow();
 		}
 	}
 	private void ComeBack(){
