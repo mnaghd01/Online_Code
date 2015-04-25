@@ -31,10 +31,17 @@ public class CheckerboardKarel extends SuperKarel {
 				i++;
 				move();
 			}
-			if (frontIsClear()){
-				move();
+		if (frontIsBlocked()){
+				ComeBack();
 				i++;
 			}
+		}
+	}
+	private void ComeBack(){
+		turnLeft();
+		turnLeft();
+		while (frontIsClear()){
+			move();
 		}
 	}
 
