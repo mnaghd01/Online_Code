@@ -19,6 +19,7 @@ public class CheckerboardKarel extends SuperKarel {
 	private void know() {
 		int j=0;
 		int i=0;
+		int k=0;
 		while(frontIsClear()){
 			move();
 			i++;
@@ -29,9 +30,20 @@ public class CheckerboardKarel extends SuperKarel {
 		j++;
 		turnRight();
 		}
-		while (i!=0){
+		int k=i;
+		while (j!=0){
 			
-		}
+			while (i!=0){
+				if (i%2!=0){
+					putBeeper();
+					move();
+					i--;
+				} else {
+					move();
+					i--;
+				}
+			}	
+			}
 	}
 
 	private void Put() {
