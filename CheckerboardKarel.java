@@ -36,7 +36,7 @@ public class CheckerboardKarel extends SuperKarel {
 		while (j!=0){
 			i=k;
 			for (int l=i;l>=0;l--){
-				if (i%2!=0){
+				if (l%2!=0){
 					putBeeper();
 					move();
 				} else {
