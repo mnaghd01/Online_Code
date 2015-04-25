@@ -37,7 +37,7 @@ public class CheckerboardKarel extends SuperKarel {
 			}
 		}
 		while(leftIsClear()){
-				if (noBeepersPresent()){
+				if (noBeepersPresent() && i==0){
 				putBeeper();
 		}
 		}
