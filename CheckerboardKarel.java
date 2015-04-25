@@ -14,13 +14,11 @@ public class CheckerboardKarel extends SuperKarel {
 		while (frontIsClear()) { /*Checks to see if it has reached the top*/
 			while (leftIsClear()){
 			Put();/* Puts a beeper in a row back and forth*/
-			goUp();         /*If reached at the end of a street, goes up one avenue*/
+         /*If reached at the end of a street, goes up one avenue*/
 			}
-			while (leftIsBlocked()){
-				Put();
+			goUp();
 			}
 			
-	}
 	}
 	private void Put() {
 		int i = 1;
