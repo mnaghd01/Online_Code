@@ -50,7 +50,7 @@ public class CheckerboardKarel extends SuperKarel {
 		if (facingEast()) {
 			turnLeft();
 			move();
-			turnRight();
+			turnLeft();
 		} else {
 			turnRight();
 			if (frontIsClear()){
