@@ -25,7 +25,7 @@ public class CheckerboardKarel extends SuperKarel {
 
 	private void PutaRow() {
 		int i = 1;
-		while(frontIsClear()){
+		while(true){
 			if (i % 2 !=0) {
 				putBeeper();
 				i++;
