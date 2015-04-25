@@ -11,22 +11,20 @@ import stanford.karel.*;
 
 public class CheckerboardKarel extends SuperKarel {
 	public void run() {
-		while (leftIsClear() && frontIsClear()) { /*Checks to see if it has reached the top*/
-			PutaRow();/* Puts a beeper in a row back and forth*/
+		while (frontIsClear()) { /*Checks to see if it has reached the top*/
+			while (leftIsClear()){
+			Put();/* Puts a beeper in a row back and forth*/
 			goUp();         /*If reached at the end of a street, goes up one avenue*/
-		}if (frontIsClear()) {
-				PutaRow();
 			}
-		if (leftIsClear()){
-			PutaRow();
-			goUp();
+			while (leftIsBlocked()){
+				Put();
+			}
+			
 	}
 	}
-
-	private void PutaRow() {
+	private void Put() {
 		int i = 1;
-		while(frontIsClear()){
-			if (i % 2 !=0) {
+		if (i % 2 !=0) {
 				putBeeper();
 				i++;
 				move();
