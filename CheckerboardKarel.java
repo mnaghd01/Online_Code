@@ -17,9 +17,10 @@ public class CheckerboardKarel extends SuperKarel {
 }
 
 	private void Put() {
+		int i = 1;
 		while (frontIsClear()) { 
 			while (leftIsClear()){
-			int i = 1;
+
 			if (i % 2 !=0) {
 				putBeeper();
 				i++;
