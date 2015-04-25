@@ -24,7 +24,7 @@ public class CheckerboardKarel extends SuperKarel {
 	}
 	private void Put() {
 		int i = 1;
-		while(true){
+
 			if (i % 2 !=0) {
 				putBeeper();
 				i++;
@@ -34,7 +34,7 @@ public class CheckerboardKarel extends SuperKarel {
 				i++;
 			}
 		}
-	}
+	
 	private void ComeBack(){
 		turnLeft();
 		turnLeft();
