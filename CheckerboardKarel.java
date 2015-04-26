@@ -29,7 +29,7 @@ public class CheckerboardKarel extends SuperKarel {
 			j++;
 		}
 		turnLeft();
-		while (j != 0) {
+		while (j != (2*j -1)) {
 			int k = i;
 			while (k != 0) {
 				if ((k ^ 2 + j ^ 2) % 2 != 0) {
@@ -42,11 +42,6 @@ public class CheckerboardKarel extends SuperKarel {
 				}
 			}
 			k = i;
-			if ((k ^ 2 + j ^ 2) % 2 != 0) {
-				putBeeper();
-				move();
-				k--;
-			}
 			GoBack();
 			GoDown();
 			j--;
