@@ -43,7 +43,6 @@ public class CheckerboardKarel extends SuperKarel {
 			}
 		if ((i ^ 2 + j ^ 2) % 2 != 0)	{
 			putBeeper();
-			
 		}
 		}
 	}
