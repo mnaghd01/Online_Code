@@ -43,6 +43,7 @@ public class CheckerboardKarel extends SuperKarel {
 			}
 			i = k;
 			GoBack();
+			GoDown();
 		}
 	}
 
@@ -53,6 +54,11 @@ public class CheckerboardKarel extends SuperKarel {
 			move();
 		}
 		turnRight();
+		turnRight();
+	}
+	private void GoDown(){
+		turnLeft();
+		move();
 		turnRight();
 	}
 }
