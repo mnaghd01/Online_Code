@@ -23,8 +23,8 @@ public class CheckerboardKarel extends SuperKarel {
 			move();
 			i++;
 		}
+		turnLeft();
 		while (leftIsClear()) {
-			turnLeft();
 			move();
 			j++;
 		}
