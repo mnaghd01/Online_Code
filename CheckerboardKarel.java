@@ -8,6 +8,7 @@
  */
 
 import stanford.karel.*;
+
 /* In the program below, Karel will go through every street and checks if the coordinates of the blocks power to an even or odd number
  * if the combination of (x^2+y^2) is an even number it will not put a beeper and vise versa.
  * then when it reached the end of each street,it has to come back to where is started and go up one street and do the same in the second street.
@@ -16,37 +17,42 @@ import stanford.karel.*;
 
 public class CheckerboardKarel extends SuperKarel {
 	public void run() {
-		int i=0;
-		int j=0;
-			while(frontIsClear()){
+		int i = 0;
+		int j = 0;
+		while (frontIsClear()) {
 			move();
 			i++;
 		}
-			while (leftIsClear()){
+		while (leftIsClear()) {
 			turnLeft();
 			move();
 			j++;
-			}
-			while (j!=0){
-				
-			int k=i;
-			while (i!=0){
-				if ((i^2+j^2)%2!=0){
+		}
+		while (j != 0) {
+
+			int k = i;
+			while (i != 0) {
+				if ((i ^ 2 + j ^ 2) % 2 != 0) {
 					putBeeper();
 					move();
 					i--;
-				}else {
+				} else {
 					move();
 					i--;
 				}
 			}
-			i=k;
+			i = k;
 			GoBack();
-			}
-			
+		}
+	}
+
 	private void GoBack() {
 		turnLeft();
 		turnLeft();
+		while(frontIsClear()){
+			move();
+		}
+		turnRight();
+		turnRight();
 	}
-	}
-	}
+}
