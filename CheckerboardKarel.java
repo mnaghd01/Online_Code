@@ -19,16 +19,16 @@ public class CheckerboardKarel extends SuperKarel {
 						putBeeper();
 						move();
 						j++;
-					
 					} else {
 						move();
 						j++;
 					}
 				}
-					
+				i=0
+				GoBack();
 			}
 	}
-	private void GoDown() { /*Checks which avenue Karel is, then decides how it should go up*/
+	private void GoBack() { /*Checks which avenue Karel is, then decides how it should go up*/
 		if (facingWest()) {
 			turnLeft();
 			move();
