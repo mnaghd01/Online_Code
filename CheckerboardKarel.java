@@ -52,7 +52,7 @@ public class CheckerboardKarel extends SuperKarel {
 		}
 	}
 
-	private void GoBack() {
+	private void GoBack() { /*This method moves Karel from one street to another one*/
 		turnLeft();
 		turnLeft();
 		while (frontIsClear()) {
