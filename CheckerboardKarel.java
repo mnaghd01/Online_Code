@@ -41,7 +41,7 @@ public class CheckerboardKarel extends SuperKarel {
 					k--;
 				}
 			}
-			i = k;
+			k = i;
 			GoBack();
 			GoDown();
 			j--;
