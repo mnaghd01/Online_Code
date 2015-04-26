@@ -11,43 +11,23 @@ import stanford.karel.*;
 
 public class CheckerboardKarel extends SuperKarel {
 	public void run() {
-
-			know();
-			
-			
-}
-	private void know() {
-		int j=0;
 		int i=0;
-		int k=0;
-		while(frontIsClear()){
-			move();
-			i++;
-		}
-		while(leftIsClear()){
-		turnLeft();
-		move();
-		j++;
-		turnRight();
-		}
-		k=i;
-		turnLeft();
-		turnLeft();
-		while (j!=-1){
-			i=k;
-			for (int l=i;l>=1;l--){
-				if (l%2!=0){
-					putBeeper();
-					move();
-				} else {
-					move();
+			while (leftIsClear()){
+				int j=0;
+				while(frontIsClear()){
+					if ((i^2 +j^2)%2!=0) {
+						putBeeper();
+						move();
+						j++;
+					
+					} else {
+						move();
+						j++;
+					}
 				}
-			}
-			j--;
-			GoDown();
+					
 			}
 	}
-
 	private void GoDown() { /*Checks which avenue Karel is, then decides how it should go up*/
 		if (facingWest()) {
 			turnLeft();
