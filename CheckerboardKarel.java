@@ -12,6 +12,7 @@ import stanford.karel.*;
 public class CheckerboardKarel extends SuperKarel {
 	public void run() {
 		int i = 1;
+		int j=1;
 		while (leftIsClear()) {
 			int j = 1;
 			while (frontIsClear()) {
@@ -32,7 +33,7 @@ public class CheckerboardKarel extends SuperKarel {
 			i++;
 		}
 		while (frontIsClear()) {
-			if (i % 2 != 0) {
+			if ((i ^ 2 + j ^ 2) % 2 != 0) {
 				putBeeper();
 				move();
 				i++;
