@@ -34,6 +34,7 @@ public class CheckerboardKarel extends SuperKarel {
 					i++;
 				}
 	}
+	}
 	private void GoBack() { /*Checks which avenue Karel is, then decides how it should go up*/
 		if (facingWest()) {
 			turnLeft();
