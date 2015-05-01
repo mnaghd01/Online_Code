@@ -5,7 +5,7 @@
  * "Handout 08: Section Handout #1"
  */
 
-import stanford.karel.*;
+import stanford.karel.SuperKarel;
 
 public class ChadKarel extends SuperKarel {
 
