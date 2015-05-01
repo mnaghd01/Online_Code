@@ -12,7 +12,6 @@ public class ChadKarel extends SuperKarel {
 	public void run() {
 		while (frontIsClear()){
 			GoToEnd();
-			MoveToNext();
 			CheckForBeeper();
 	}
 		GoToEnd();
@@ -28,9 +27,7 @@ public class ChadKarel extends SuperKarel {
 		turnRight();
 	}
 	
-	private void MoveToNext(){
-		move();
-	}
+	
 
 	private void CheckForBeeper(){
 		int n=0;
