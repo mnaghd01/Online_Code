@@ -8,7 +8,11 @@
 import stanford.karel.*;
 
 public class ChadKarel extends SuperKarel {
-
+/*
+ * In this program Karel checks every alley if th
+ * 
+ * 
+ */
 	public void run() {
 		while (frontIsClear()){
 			GoToEnd();
@@ -56,7 +60,7 @@ public class ChadKarel extends SuperKarel {
 			turnRight();
 			move();
 			turnLeft();
-		} 
+		}
 			else {
 				move();
 				turnRight();
