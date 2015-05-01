@@ -2,7 +2,10 @@
 <classpath>
 	<classpathentry kind="src" path=""/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+<<<<<<< HEAD
 	<classpathentry kind="lib" path="/Assignment1/karel.jar"/>
+=======
+>>>>>>> 37a618ffeb023642b3372332942cbabd5a4332b0
 	<classpathentry kind="lib" path="karel.jar"/>
 	<classpathentry kind="output" path=""/>
 </classpath>
