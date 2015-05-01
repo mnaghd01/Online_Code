@@ -38,12 +38,12 @@ public class ChadKarel extends SuperKarel {
 		int n=0;
 		int m=0;
 		for (int i = 1 ;i <= 3; i++){
-			while (beepersPresent()){
+			while (beepersPresent()){    // Was put into place because there may be more than one beeper present
 				n++;
 				pickBeeper();
 			}
 			m++;
-			if (frontIsClear()){
+			if (frontIsClear()){		// Was put into place becuase Karel may have reached the far end of the alley.
 			move();
 			}
 		}
