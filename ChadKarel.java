@@ -5,7 +5,7 @@
  * "Handout 08: Section Handout #1"
  */
 
-import stanford.karel.SuperKarel;
+import stanford.karel.*;
 
 public class ChadKarel extends SuperKarel {
 
@@ -27,16 +27,13 @@ public class ChadKarel extends SuperKarel {
 		int n=0;
 		int m=0;
 		for (int i = 1 ;i <= 3; i++){
-			if (beepersPresent()){
+			while (beepersPresent()){
 				n++;
 				pickBeeper();
-				move();
-		}
-			else {
-				m++;
-				move();
 			}
-		}
+			m++;
+			move();
+			}
 		turnLeft();
 		turnLeft();
 		if(n==3) {
