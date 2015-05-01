@@ -41,7 +41,9 @@ public class ChadKarel extends SuperKarel {
 		if(n==3) {
 			for (int i=1; i<=3;i++){
 				putBeeper();
+				if (frontIsClear()){
 				move();
+				}
 			}
 			turnRight();
 			turnRight();
