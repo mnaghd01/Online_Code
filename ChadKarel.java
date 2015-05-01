@@ -16,7 +16,7 @@ public class ChadKarel extends SuperKarel {
 			MoveToNext();
 	}
 
-	private void GoToTheEnd() {
+	private void GoToEnd() {
 		turnLeft();
 		while (frontIsClear()) {
 			move();
