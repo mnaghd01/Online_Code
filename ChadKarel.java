@@ -10,12 +10,10 @@ import stanford.karel.*;
 public class ChadKarel extends SuperKarel {
 
 	public void run() {
-		while frontIsClear(){
 			GoToEnd();
 			CheckForBeeper();
 			GetReadyForNext();
 			MoveToNext();
-		}
 	}
 
 	private void GoToTheEnd() {
