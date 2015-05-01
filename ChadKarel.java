@@ -12,8 +12,6 @@ public class ChadKarel extends SuperKarel {
 	public void run() {
 			GoToEnd();
 			CheckForBeeper();
-			GetReadyForNext();
-			MoveToNext();
 	}
 
 	private void GoToEnd() {
@@ -26,39 +24,35 @@ public class ChadKarel extends SuperKarel {
 	}
 
 	private void CheckForBeeper(){
-		int n=0
-		int m=0
-		for (int i=1,i=<3; i++){
-			if (BeeperIsPresent()){
+		int n=0;
+		int m=0;
+		for (int i = 1 ;i <= 3; i++){
+			if (beepersPresent()){
 				n++;
-				peekBeeper();
+				pickBeeper();
+				move();
 		}
 			else {
-				m++
+				m++;
 				move();
 			}
 		}
 		turnLeft();
 		turnLeft();
 		if(n==3) {
-			for (int i=1; i=<3;i++){
+			for (int i=1; i<=3;i++){
 				putBeeper();
 				move();
-			} 
+			}
+			turnRight();
+			turnRight();
+			move();
+			turnLeft();
+		} 
 			else {
 				move();
 				turnRight();
 			}
-		}
 	}
 	
-	private GetReadyForNext(){
-		turnRight();
-		turnRight();
-		move();
-		turnLeft();
-	}
-	private MoveToNext(){
-		move();
-	}
 }
