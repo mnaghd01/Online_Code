@@ -26,7 +26,7 @@ public class ChadKarel extends SuperKarel {
 	private void CheckForBeeper(){
 		int n=0;
 		int m=0;
-		for (int i = 1 ;i <= 3; i++){
+		for (int i = 1 ;i <= 2; i++){
 			while (beepersPresent()){
 				n++;
 				pickBeeper();
